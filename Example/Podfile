@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'RxNetworking_Example' do
+  pod 'RxNetworking', :path => '../'
+
+  target 'RxNetworking_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
