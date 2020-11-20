@@ -1,0 +1,28 @@
+{
+  "name": "RxNetworking",
+  "version": "0.1.0",
+  "summary": "A short description of RxNetworking.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/SanjithKanagavel/RxNetworking",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "SanjithKanagavel": "sanjithkanagavel@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/SanjithKanagavel/RxNetworking.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source_files": "RxNetworking/Classes/*.swift",
+  "dependencies": {
+    "RxSwift": [
+      ">= 5.0.0"
+    ]
+  }
+}

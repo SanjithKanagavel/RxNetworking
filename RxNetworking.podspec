@@ -29,8 +29,8 @@ TODO: Add long description of the pod here.
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
-
-  s.source_files = 'RxNetworking/Classes/**/*'
+  s.requires_arc = true
+  s.source_files = 'RxNetworking/Classes/*.swift'
   
   # s.resource_bundles = {
   #   'RxNetworking' => ['RxNetworking/Assets/*.png']
@@ -38,5 +38,5 @@ TODO: Add long description of the pod here.
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'RxSwift', '>= 5.0.0'
 end

@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3B43A904728BD44AF183443C /* Pods_RxNetworking_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4377A7AEBF61EDFE14EE8A3 /* Pods_RxNetworking_Example.framework */; };
+		3903F18F13A77A36B6934AFB /* libPods-RxNetworking_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DE8FCBC6D94A5F8C3F6D861A /* libPods-RxNetworking_Tests.a */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		E726BF610FAEEC49639568E7 /* Pods_RxNetworking_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07296A4F0FF3F879A05803DA /* Pods_RxNetworking_Tests.framework */; };
+		8D7F5FFC5B7BAC83259878B7 /* libPods-RxNetworking_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D3343CD3B1735BBC4A214BBB /* libPods-RxNetworking_Example.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,8 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		05595CEE66A4ED8A2EF6E913 /* RxNetworking.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = RxNetworking.podspec; path = ../RxNetworking.podspec; sourceTree = "<group>"; };
-		07296A4F0FF3F879A05803DA /* Pods_RxNetworking_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxNetworking_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0267A2CF2566644A008724D4 /* RxNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		05595CEE66A4ED8A2EF6E913 /* RxNetworking.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RxNetworking.podspec; path = ../RxNetworking.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		148A9868551094CD804ED7D6 /* Pods-RxNetworking_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxNetworking_Tests.release.xcconfig"; path = "Target Support Files/Pods-RxNetworking_Tests/Pods-RxNetworking_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* RxNetworking_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxNetworking_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -42,10 +42,11 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		9D0397A4CC047204690B3CB4 /* Pods-RxNetworking_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxNetworking_Example.release.xcconfig"; path = "Target Support Files/Pods-RxNetworking_Example/Pods-RxNetworking_Example.release.xcconfig"; sourceTree = "<group>"; };
-		A4377A7AEBF61EDFE14EE8A3 /* Pods_RxNetworking_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxNetworking_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BF6C629A142639E2E7CE6EFE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		BF6C629A142639E2E7CE6EFE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		D3343CD3B1735BBC4A214BBB /* libPods-RxNetworking_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RxNetworking_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCA941773EEF6296DE63678B /* Pods-RxNetworking_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxNetworking_Example.debug.xcconfig"; path = "Target Support Files/Pods-RxNetworking_Example/Pods-RxNetworking_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		ED71D13C3518268FB5642337 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		DE8FCBC6D94A5F8C3F6D861A /* libPods-RxNetworking_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RxNetworking_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED71D13C3518268FB5642337 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		F91C83D0B14B7C7EFD96DC70 /* Pods-RxNetworking_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxNetworking_Tests.debug.xcconfig"; path = "Target Support Files/Pods-RxNetworking_Tests/Pods-RxNetworking_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,7 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B43A904728BD44AF183443C /* Pods_RxNetworking_Example.framework in Frameworks */,
+				8D7F5FFC5B7BAC83259878B7 /* libPods-RxNetworking_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,7 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E726BF610FAEEC49639568E7 /* Pods_RxNetworking_Tests.framework in Frameworks */,
+				3903F18F13A77A36B6934AFB /* libPods-RxNetworking_Tests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,8 +143,9 @@
 		800E979114446C80ADE7E5F7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A4377A7AEBF61EDFE14EE8A3 /* Pods_RxNetworking_Example.framework */,
-				07296A4F0FF3F879A05803DA /* Pods_RxNetworking_Tests.framework */,
+				0267A2CF2566644A008724D4 /* RxNetworking.framework */,
+				D3343CD3B1735BBC4A214BBB /* libPods-RxNetworking_Example.a */,
+				DE8FCBC6D94A5F8C3F6D861A /* libPods-RxNetworking_Tests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -156,7 +158,6 @@
 				F91C83D0B14B7C7EFD96DC70 /* Pods-RxNetworking_Tests.debug.xcconfig */,
 				148A9868551094CD804ED7D6 /* Pods-RxNetworking_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -171,7 +172,6 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				1B04A36E6C6716CCAC33DF45 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -213,10 +213,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = AAKS6C6U36;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = AAKS6C6U36;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -227,6 +229,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -262,24 +265,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1B04A36E6C6716CCAC33DF45 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RxNetworking_Example/Pods-RxNetworking_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/RxNetworking/RxNetworking.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxNetworking.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxNetworking_Example/Pods-RxNetworking_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		8E87163E1456C43EA59E42E3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -478,6 +463,7 @@
 			baseConfigurationReference = DCA941773EEF6296DE63678B /* Pods-RxNetworking_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AAKS6C6U36;
 				INFOPLIST_FILE = RxNetworking/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -493,6 +479,7 @@
 			baseConfigurationReference = 9D0397A4CC047204690B3CB4 /* Pods-RxNetworking_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = AAKS6C6U36;
 				INFOPLIST_FILE = RxNetworking/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -507,6 +494,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F91C83D0B14B7C7EFD96DC70 /* Pods-RxNetworking_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = AAKS6C6U36;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -529,6 +517,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 148A9868551094CD804ED7D6 /* Pods-RxNetworking_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = AAKS6C6U36;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",

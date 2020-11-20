@@ -1,0 +1,23 @@
+PODS:
+  - RxNetworking (0.1.0):
+    - RxSwift (>= 5.0.0)
+  - RxSwift (5.1.1)
+
+DEPENDENCIES:
+  - RxNetworking (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs:
+    - RxSwift
+
+EXTERNAL SOURCES:
+  RxNetworking:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  RxNetworking: 16a26e55a438f43ce98ea31162e108a18df098a6
+  RxSwift: 81470a2074fa8780320ea5fe4102807cb7118178
+
+PODFILE CHECKSUM: 1b686073172996803e4f4968c1bce9199117d220
+
+COCOAPODS: 1.7.4
