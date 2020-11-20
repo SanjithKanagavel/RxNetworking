@@ -2,11 +2,6 @@
 
 Networking library using RxSwift 
 
-[![CI Status](https://img.shields.io/travis/SanjithKanagavel/RxNetworking.svg?style=flat)](https://travis-ci.org/SanjithKanagavel/RxNetworking)
-[![Version](https://img.shields.io/cocoapods/v/RxNetworking.svg?style=flat)](https://cocoapods.org/pods/RxNetworking)
-[![License](https://img.shields.io/cocoapods/l/RxNetworking.svg?style=flat)](https://cocoapods.org/pods/RxNetworking)
-[![Platform](https://img.shields.io/cocoapods/p/RxNetworking.svg?style=flat)](https://cocoapods.org/pods/RxNetworking)
-
 ## Example
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
