@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/SanjithKanagavel/RxNetworking'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'SanjithKanagavel' => 'sanjithkanagavel@gmail.com' }
-  s.source           = { :git => 'https://github.com/SanjithKanagavel/RxNetworking.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/SanjithKanagavel/RxNetworking.git', :tag => 'v'+s.version.to_s }
   s.social_media_url = 'https://twitter.com/Dastan__17'
   s.ios.deployment_target = '9.0'
   s.requires_arc = true
