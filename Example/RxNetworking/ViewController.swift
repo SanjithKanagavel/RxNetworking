@@ -14,100 +14,104 @@ class ViewController: UIViewController {
     let disposeBag = DisposeBag()
     override func viewDidLoad() {
         super.viewDidLoad()
-        urlExample()
-        getExample()
-        postExample()
-        putExample()
+        urlDataTaskExample()
+        getRequest()
+        getRequestWithParseData()
+        postRequest()
+        putRequest()
     }
     
-    func urlExample() {
+    func urlDataTaskExample() {
         if let url = URL(string: "https://postman-echo.com/get?foo1=bar1&foo2=bar2") {
             URLSession.shared
                 .rx
                 .dataTask(url: url)
                 .subscribe(onNext: { (result) in
-                    switch result {
-                    case .success(let data, _):
-                        if let d = data {
-                            print("urlExample:")
-                            print(String(decoding: d, as: UTF8.self))
-                        }
-                        break
-                    case .failure(_):
-                        break
+                    if result.Error == nil, let data = result.Data {
+                        print("urlDataTaskExample:\n" + String(decoding: data, as: UTF8.self))
+                    }
+                }).disposed(by: disposeBag)
+        }
+    }
+    
+    func urlDataTaskWithParseDataExample() {
+        if let url = URL(string: "https://postman-echo.com/get?foo1=bar1&foo2=bar2") {
+            URLSession.shared
+                .rx
+                .dataTask(url: url,returnType: ResponseData.self)
+                .subscribe(onNext: { (result) in
+                    if result.Error == nil, let data = result.Data,
+                        let jsonData = try? JSONEncoder().encode(data),
+                        let jsonString = String(data: jsonData, encoding: .utf8) {
+                            print("urlDataTaskWithParseDataExample :\n" + jsonString)
                     }
                 }).disposed(by: disposeBag)
         }
     }
 
-    func getExample() {
+    func getRequest() {
         var request = URLRequest(url: URL(string: "https://postman-echo.com/get?foo1=bar1&foo2=bar2")!,timeoutInterval: Double.infinity)
         request.httpMethod = "GET"
         URLSession.shared
             .rx
             .dataTask(request: request)
             .subscribe(onNext: { (result) in
-                switch result {
-                case .success(let data, _):
-                    if let d = data {
-                        print("getExample:")
-                        print(String(decoding: d, as: UTF8.self))
-                    }
-                    break
-                case .failure(_):
-                    break
+                if result.Error == nil, let data = result.Data {
+                    print("getRequest:\n" + String(decoding: data, as: UTF8.self))
                 }
             }).disposed(by: disposeBag)
     }
     
-    func postExample() {
+    func getRequestWithParseData() {
+        var request = URLRequest(url: URL(string: "https://postman-echo.com/get?foo1=bar1&foo2=bar2")!,timeoutInterval: Double.infinity)
+        request.httpMethod = "GET"
+        URLSession.shared
+            .rx
+            .dataTask(request: request, returnType: ResponseData.self)
+            .subscribe(onNext: { (result) in
+                if result.Error == nil, let data = result.Data,
+                    let jsonData = try? JSONEncoder().encode(data),
+                    let jsonString = String(data: jsonData, encoding: .utf8) {
+                        print("getRequestWithParseData:\n" + jsonString)
+                }
+            }).disposed(by: disposeBag)
+    }
+    
+    func postRequest() {
         let parameters = "foo1=bar1&foo2=bar2"
         let postData =  parameters.data(using: .utf8)
         var request = URLRequest(url: URL(string: "https://postman-echo.com/post")!,timeoutInterval: Double.infinity)
         request.httpMethod = "POST"
         request.httpBody = postData
-        
         URLSession.shared
             .rx
             .dataTask(request: request)
             .subscribe(onNext: { (result) in
-                switch result {
-                case .success(let data, _):
-                    if let d = data {
-                        print("postExample:")
-                        print(String(decoding: d, as: UTF8.self))
-                    }
-                    break
-                case .failure(_):
-                    break
+                if result.Error == nil, let data = result.Data {
+                    print("postExample:\n" + String(decoding: data, as: UTF8.self))
                 }
             }).disposed(by: disposeBag)
-        
     }
     
-    func putExample() {
+    func putRequest() {
         let parameters = "This is expected to be sent back as part of response body."
         let postData = parameters.data(using: .utf8)
         var request = URLRequest(url: URL(string: "https://postman-echo.com/put")!,timeoutInterval: Double.infinity)
         request.httpMethod = "PUT"
         request.httpBody = postData
-        
         URLSession.shared
             .rx
             .dataTask(request: request)
             .subscribe(onNext: { (result) in
-                switch result {
-                case .success(let data, _):
-                    if let d = data {
-                        print("putExample:")
-                        print(String(decoding: d, as: UTF8.self))
-                    }
-                    break
-                case .failure(_):
-                    break
+                if result.Error == nil, let data = result.Data {
+                    print("putExample:\n" + String(decoding: data, as: UTF8.self))
                 }
             }).disposed(by: disposeBag)
     }
-
 }
 
+struct ResponseData : Codable {
+    var args:[String:String]
+    var headers:[String:String]
+    var url:String
+}

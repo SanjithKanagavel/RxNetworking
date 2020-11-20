@@ -3,7 +3,5 @@ target 'RxNetworking_Example' do
 
   target 'RxNetworking_Tests' do
     inherit! :search_paths
-
-    
   end
 end
