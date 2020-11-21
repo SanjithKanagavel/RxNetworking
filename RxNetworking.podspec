@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'RxNetworking'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'iOS Networking library using RxSwift'
   s.homepage         = 'https://github.com/SanjithKanagavel/RxNetworking'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
